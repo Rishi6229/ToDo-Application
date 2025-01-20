@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import '../TaskManager.css'
+
 
 function TaskList(props) {
     const [index, setIndex] = useState(0);

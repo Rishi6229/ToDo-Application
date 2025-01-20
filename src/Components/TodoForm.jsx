@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TaskList from './TaskList';
+import '../TaskManager.css'
 
 function TodoForm() {
   const[task , setTask] = useState("");
