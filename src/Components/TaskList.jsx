@@ -39,9 +39,10 @@ function TaskList(props) {
                         <button onClick={()=>{
                             if(isEditing === tasks.id){
                                 if(editedTask.trim() !== ""){
-                                    setTaskArray(taskArray.map(t=> t.id===tasks.id?{...t,name:editedTask}:t));
+                                    setTaskArray(taskArray.map(t=> t.id===tasks.id? {...t,name:editedTask} : t));
                                 }
                                 setIsEditing(null);
+                                setEditedTask("");
                             }else{
                                 setIsEditing(tasks.id)
                                 setEditedTask(t.name)
